@@ -1547,3 +1547,176 @@ input[type=range] { width: 100%; accent-color: var(--moss); }
   }
 }
 
+/* =====================================
+   HEARPAW — ECOMMERCE DESIGN REFRESH
+   Giữ nguyên HTML và JavaScript hiện tại
+===================================== */
+
+:root {
+  --moss: #466747;
+  --deep: #2F4932;
+  --cream: #FFF9F0;
+  --white: #FFFFFF;
+  --ink: #263629;
+  --muted: #718071;
+  --line: #E5EADF;
+  --mint-light: #F2F7EF;
+  --mint-pastel: #DDEBDD;
+  --pink: #F3C3CD;
+}
+
+/* Nền và chữ */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px;
+}
+
+body {
+  color: var(--ink);
+  background: var(--cream);
+  font-family: "DM Sans", sans-serif;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4 {
+  color: var(--deep);
+  line-height: 1.2;
+  letter-spacing: -0.035em;
+}
+
+p {
+  line-height: 1.75;
+}
+
+/* Nút bấm thống nhất */
+button,
+.btn,
+a.btn {
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:hover,
+.btn:hover,
+a.btn:hover {
+  transform: translateY(-2px);
+}
+
+/* Nút mua hàng và nút hành động chính */
+.btn-primary,
+button.btn-primary,
+.add-to-cart-btn {
+  background: var(--moss);
+  color: var(--white);
+  border: 1px solid var(--moss);
+  border-radius: 12px;
+  font-weight: 700;
+  padding: 13px 22px;
+  box-shadow: 0 5px 14px rgba(53, 71, 46, 0.12);
+}
+
+/* Ảnh sản phẩm đầu trang */
+.hero-product-image {
+  display: block;
+  width: 100%;
+  max-width: 680px;
+  height: auto;
+  object-fit: contain;
+  image-rendering: auto;
+  margin: 0 auto;
+}
+
+/* Khung sản phẩm */
+.teaser-card,
+.product-stage {
+  border-radius: 24px;
+  overflow: hidden;
+}
+
+.teaser-card {
+  background: var(--white);
+  border: 1px solid var(--line);
+  box-shadow: 0 8px 28px rgba(47, 73, 50, 0.06);
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.teaser-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 36px rgba(47, 73, 50, 0.11);
+}
+
+/* Ảnh trong thẻ sản phẩm */
+.teaser-photo {
+  background: var(--mint-light);
+}
+
+/* Các ô nội dung, tính năng */
+.feature-card,
+.dashboard-card {
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  background: var(--white);
+  box-shadow: 0 5px 20px rgba(47, 73, 50, 0.04);
+}
+
+/* Biểu mẫu */
+input,
+select,
+textarea {
+  border-color: var(--line);
+  border-radius: 10px;
+  font: inherit;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 2px solid rgba(70, 103, 71, 0.25);
+  border-color: var(--moss);
+}
+
+/* Ảnh không tràn khỏi khung */
+img {
+  max-width: 100%;
+}
+
+/* Điện thoại */
+@media (max-width: 650px) {
+  .hero-product-image {
+    max-width: 100%;
+  }
+
+  .teaser-card {
+    border-radius: 18px;
+  }
+
+  button,
+  .btn,
+  a.btn {
+    max-width: 100%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+}
+
