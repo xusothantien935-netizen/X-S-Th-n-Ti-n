@@ -1523,3 +1523,12 @@ input[type=range] { width: 100%; accent-color: var(--moss); }
     transition-duration: .01ms !important;
   }
 }
+.hero-product-image {
+  display: block;
+  width: 100%;
+  max-width: 460px;
+  height: auto;
+  object-fit: contain;
+  image-rendering: auto;
+  margin: 0 auto;
+}
