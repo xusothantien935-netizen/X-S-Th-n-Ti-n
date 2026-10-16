@@ -6,6 +6,11 @@
   <meta name="theme-color" content="#414B35" />
   <meta name="description" content="HearPaw – vòng cổ GPS thông minh giúp bạn an tâm đồng hành cùng thú cưng." />
   <title>HearPaw | An tâm trong từng bước chân</title>
+   <script>
+    if (sessionStorage.getItem("hearpawDemoLogin") !== "yes") {
+      window.location.replace("login.html");
+    }
+  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
