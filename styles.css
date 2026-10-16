@@ -1,3 +1,6 @@
+/* HEARPAW — FRESH MINT EXPERIENCE
+   Replace the entire contents of styles.css with this file.
+   Existing class names and page/dashboard visibility rules are preserved.
 */
 :root{--moss:#466747;--deep:#35472E;--cream:#FFF8EC;--white:#FFFEFA;--ink:#2F3D2D;--muted:#657461;--line:#E2EBDD;--pink:#F3C3CD;--mint-light:#F4FAF3;--mint-pastel:#B9D8B5;--mint-medium:#DCEED8;--shadow:0 14px 35px rgba(53,71,46,.09)}
 *{box-sizing:border-box}
@@ -67,64 +70,3 @@ a{color:inherit;text-decoration:none}button,input,select,textarea{font:inherit}b
 .dashboard-header{padding:28px 18px 18px;align-items:flex-start;flex-direction:column}.dashboard-header h1{font-size:32px}.dashboard-shell{display:block;padding:0 12px;margin-bottom:48px}.dash-sidebar{min-height:0;margin-bottom:13px;padding:10px}.pet-switcher{padding:6px 7px 12px}.dash-menu{display:flex;overflow-x:auto;gap:5px;padding-top:10px}.dash-link{flex:0 0 auto;gap:6px;padding:9px 10px;font-size:12px}.dash-link span{font-size:10px}.dash-link .alert-count{display:none}.sidebar-note{display:none}.dash-content{width:100%}.panel-heading h2{font-size:21px}.panel-heading{align-items:flex-start}.stat-grid{grid-template-columns:1fr;gap:8px}.stat-card{display:grid;grid-template-columns:35px minmax(0,1fr);column-gap:10px;padding:13px}.stat-symbol{grid-row:span 3;margin:0}.stat-card>small,.stat-value,.stat-foot{grid-column:2}.stat-value{margin:2px 0}.dash-card{padding:13px}.dash-two-col{gap:10px}.pet-profile-card{grid-template-columns:1fr;padding:15px}.profile-pet-emoji{width:90px;height:90px;font-size:48px;margin:0 auto}.profile-fields{grid-template-columns:1fr}.wide-field{grid-column:span 1}.history-list>div{grid-template-columns:48px 1fr}.history-list>div small{grid-column:2}.large-map{height:320px}.zone-map{height:280px}.safezone-layout{grid-template-columns:1fr}.notification-row{gap:8px}.notification-row b{font-size:10px}.tag{font-size:8px}
 .contact-layout{grid-template-columns:1fr;padding:0 18px;gap:20px;margin-bottom:48px}.contact-info{padding:24px}.contact-info h2{font-size:26px}.footer-main{gap:14px}.footer-main>p{width:100%;margin:0}.footer-links{flex-wrap:wrap;gap:12px}.footer-bottom{flex-direction:column;gap:5px}.chat-widget{right:13px;bottom:13px}.chat-fab{width:48px;height:48px}.modal-backdrop{align-items:flex-end;padding:0}.cart-modal{max-height:88vh;padding:21px;border-radius:14px 14px 0 0}.price-breakdown>div{font-size:11px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}.floating-note,.note-bottom{animation:none}}
-/* FIX: Preserve individual button styles */
-
-/* Main action buttons */
-.btn-dark {
-  background: var(--deep);
-  color: #fff;
-  border: 1px solid transparent;
-}
-
-.btn-dark:hover {
-  background: var(--moss);
-  color: #fff;
-}
-
-/* Outline buttons */
-.btn-outline {
-  background: rgba(255, 255, 255, 0.65);
-  color: var(--deep);
-  border: 1px solid #b9d0b3;
-}
-
-/* Shopping cart */
-.cart-button {
-  background: var(--white);
-  color: var(--deep);
-  border: 1px solid var(--line);
-}
-
-.cart-button span {
-  background: var(--deep);
-  color: #fff;
-}
-
-/* Dashboard buttons */
-.dash-link {
-  background: transparent;
-  color: #65695f;
-  border: 0;
-}
-
-.dash-link.active {
-  background: var(--deep);
-  color: #fff;
-}
-
-/* Chat buttons */
-.chat-fab {
-  background: var(--deep);
-  color: #fff;
-}
-
-.chat-head button {
-  background: transparent;
-  color: #fff;
-}
-
-.chat-panel form button {
-  background: var(--moss);
-  color: #fff;
-}
-}
