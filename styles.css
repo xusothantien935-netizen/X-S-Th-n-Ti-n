@@ -1523,12 +1523,27 @@ input[type=range] { width: 100%; accent-color: var(--moss); }
     transition-duration: .01ms !important;
   }
 }
+
 .hero-product-image {
   display: block;
   width: 100%;
-  max-width: 460px;
+  max-width: 680px;
   height: auto;
   object-fit: contain;
   image-rendering: auto;
   margin: 0 auto;
 }
+
+.product-visual {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+@media (max-width: 650px) {
+  .hero-product-image {
+    max-width: 100%;
+  }
+}
+
